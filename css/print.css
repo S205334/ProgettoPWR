@@ -1,0 +1,35 @@
+/* CSS STAMPA */
+body{
+  color:black;
+  background:white;
+  font-family: "Times New Roman", Times, serif;
+  font-size:12pt;
+}
+
+#header{
+  border:0.3em solid red;
+  padding:1em;
+}
+
+#menu{
+  display:none;
+}
+
+#content{
+   padding-top:5%;
+   margin-left: 0em;
+}
+
+#footer{
+  clear:both;
+  	border-top: 0.2em solid black;
+  	padding: 1em;
+  	width: 95%;
+  
+  	position: relative;
+  	bottom: 0;
+}
+
+a:after {
+    content: " (" attr(href) ")";
+} 

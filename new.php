@@ -4,8 +4,22 @@
 		<title>NEW USER</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<meta name="author" content="Simone Santia" >
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
+		<div id="header">
+			<?php include("header.php"); ?>
+		</div>
+		
+		<div id="navigation">
+			<?php include("menu.php"); ?>
+		</div>
+		
+		<div id="content">
+		</div>
+		
+		<div id="footer">
+			<?php include("footer.php"); ?>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,70 @@
+/* CSS */
+
+body { 
+	width: 75%;
+	margin: auto;
+	background-color : white; 
+	color : black; 
+	font-family: "sans serif";
+	font-size: 100%;
+}
+	
+/* header */
+
+#header {
+	border-bottom: thin ridge grey;
+	padding: 1em;
+}
+
+.welcome {
+	float: right;
+}
+
+/* content */
+
+#content {
+	margin-left:15em;
+	padding: 1em;
+}
+
+/* menu */
+
+#navigation {
+	float: left; 
+	padding: 1em;
+	border-right: thin solid grey;
+	width: 13em; 
+}
+
+#navigation ul {
+	list-style:none
+}
+
+#navigation a {
+	text-decoration: none;
+}
+
+#navigation a:hover {
+	text-decoration: underline;
+}
+
+#navigation a:visited {
+	color:black;
+}
+
+/* footer */
+
+#footer{ 
+	border-top: thin solid grey; 
+	clear : both;
+	padding: 1em;
+	position: absolute;
+	width:75%;
+	bottom: 0;
+}
+
+.info_autore{ 
+	font-style:italic; 
+	font-size:85%;
+	text-align:right;
+}
