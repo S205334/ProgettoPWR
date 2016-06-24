@@ -1,0 +1,29 @@
+
+Progettazione di servizi web e reti di calcolatori
+
+Politecnico di Torino
+AA 2015-2016 – homework di programmazione
+
+Sviluppare in tecnologia PHP un sito web per acquistare materiale informatico, organizzato come segue.
+La pagina iniziale (HOME, corrispondente al file home.php) fornisce una presentazione generale del sito.
+
+La pagina di creazione nuovo utente (NEW) permette di creare un nuovo utente del sistema, contraddistinto dal nickname con cui autenticarsi e dalla sua pasword, da inserirsi due volte in due campi diversi per evitare errori di introduzione.  La pagina NEW contiene quindi i suddetti campi, un pulsante CREA NUOVO UTENTE ed un pulsante CANCELLA per cancellare il contenuto di tutti i campi, restando nella stessa pagina.  Se le due password introdotte non coincidono il sistema deve segnalare l’errore e non creare il nuovo utente.
+
+La pagina di identificazione (LOGIN) permette all’utente di introdurre il suo nick e la sua password per autenticarsi.  La pagina contiene un form con due campi testuali e due bottoni che rispettivamente cancellano il contenuto di tutti i campi (PULISCI) o li inviano al server per il controllo d’accesso (OK). Facendo accessi successivi alla pagina LOGIN dal medesimo browser (anche in giorni diversi ma nei 7 giorni
+successivi all’ultimo login), il campo Nick deve essere precompilato con l’ultimo valore usato da quel browser
+nella pagina LOGIN.
+Una volta autenticatosi l’utente viene indirizzato direttamente alla pagina delle informazioni (INFO) che fornisce l’elenco dei prodotti, la quantita' disponibile ed il prezzo unitario. Nel caso che l’utente non sia identificato (ossia non sia prima passato dalla pagina LOGIN) la pagina fornisce solo il nome di ciascun prodotto.
+
+La pagina per gli acquisti (ACQUISTA) contiene un form per scegliere i prodotti da ordinare. I prodotti vengono selezionati  introducendo  una  quantita'  diversa  da  zero  (specificata  tramite  un  campo  di  testo).   Un  pulsante permette di azzerare tutti i dati introdotti mentre un altro pulsante permette di effettuare l’ordine andando alla pagina CONFERMA.
+Se l’utente non si e' precedentemente identificato, la pagina ACQUISTA presenta solo il seguente avviso:
+
+“Attenzione!  la procedura di acquisto e' accessibile solo agli utenti autenticati. ”
+La pagina CONFERMA deve contenere un riassunto dell’ordine:  elenco prodotti selezionati, quantita' che si vuole ordinare, prezzo unitario di ogni prodotto, prezzo totale di ogni prodotto e importo totale dell’ordine.
+Un pulsante (OK) permette di confermare l’ordine andando quindi alla pagina FINALE, mentre un altro pulsante (ANNULLA) permette di annullare l’ordine tornando alla pagina ACQUISTA. 
+
+Se alcuni prodotti non sono disponibili nelle quantita' desiderate, cio' deve essere chiaramente evidenziato, indicando anche la quantita' disponibile e proponendo solo il pulsante ANNULLA.
+
+La pagina FINALE conferma che l’ordine è stato accettato, ringraziando l’utente col suo nick.
+Tutte le pagine devono contenere nella medesima posizione un menù comune per andare alle pagine HOME, NEW, INFO, LOGIN ed ACQUISTA. Inoltre il menù contiene una voce che permette in qualunque momento di uscire dal sistema (LOGOUT) ossia di tornare anonimi, come prima della procedura di autenticazione. Questa
+voce non è attiva se l’utente non si è ancora autenticato. Viceversa la voce LOGIN deve essere presente ma non attiva per un utente autenticato. In tutte le pagine i valori relativi ai prezzi dei prodotti devono essere espressi in Euro con la precisione dei centesimi.
+
